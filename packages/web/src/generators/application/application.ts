@@ -221,7 +221,7 @@ export async function applicationGenerator(host: Tree, schema: Schema) {
       project: options.projectName,
       skipSerializers: true,
       setupFile: 'web-components',
-      compiler: options.compiler as 'tsc',
+      compiler: options.compiler,
     });
     tasks.push(jestTask);
   }
